@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/hashicorp-learn/s3-webapp/aws"
+  source  = "git@github.com:jisorondo/terraform-aws-s3-website.git"
   name    = var.name
   region  = var.region
   prefix  = var.prefix
