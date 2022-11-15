@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "git::ssh://jsorondo@hashicorp.com/terraform-aws-s3-website.git"
+  source  = "git::ssh://jisorondo/terraform-aws-s3-website.git"
   name    = var.name
   region  = var.region
   prefix  = var.prefix
